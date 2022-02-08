@@ -1,0 +1,754 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+body a {
+  text-decoration: none;
+  color: #000;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+body ul {
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.add-to-card {
+  padding: 30px;
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  background-color: #fff;
+  height: 100vh;
+  max-width: 300px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.add-to-card h2 {
+  font-size: 16px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.add-to-card .cross-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.add-to-card .cross-button i {
+  padding: 5px;
+  font-size: 28px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.add-to-card .remove-from-card {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+
+.add-to-card .remove-from-card i {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.add-to-card .card {
+  margin-top: 50px;
+  position: relative;
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.add-to-card .card .product-img img {
+  width: 60px;
+}
+
+.add-to-card .card .details {
+  margin-left: 30px;
+}
+
+.add-to-card .card .details .name {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.add-to-card .card .details .number-of-product {
+  border: 1px solid #000;
+  width: 20px;
+  border: none;
+  text-align: center;
+}
+
+.add-to-card .card .details .decrease, .add-to-card .card .details .increase {
+  border: 1px solid #eee;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.add-to-card .card .details p {
+  margin-top: 10px;
+}
+
+header {
+  background: transparent;
+  position: relative;
+  z-index: 99;
+}
+
+header .top-header {
+  padding: 8px 0px;
+}
+
+header .top-header .top-header-left p {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+header .top-header .top-header-right {
+  position: relative;
+}
+
+header .top-header .top-header-right ul li {
+  cursor: pointer;
+}
+
+header .top-header .top-header-right ul li a {
+  font-size: 14px;
+  color: #000;
+}
+
+header .top-header .top-header-right ul li a i {
+  color: #000;
+}
+
+header .top-header .top-header-right ul li a:first-child i {
+  margin-right: 5px;
+}
+
+header .top-header .top-header-right ul li a .fa-cart-plus {
+  font-size: 19px;
+}
+
+header .top-header .top-header-right .login-form {
+  padding: 20px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 300px;
+  background-color: #eee;
+  z-index: 99999;
+  display: none;
+}
+
+header .top-header .top-header-right .login-form input {
+  background-color: #fff;
+  width: 100%;
+  height: 35px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc7c7;
+}
+
+header .top-header .top-header-right .login-form a {
+  display: inline-block;
+  margin-bottom: 20px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #ac2d48;
+}
+
+header .top-header .top-header-right .login-form button {
+  width: 100%;
+  background-color: #e5204f;
+  padding: 5px 0px;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header .top-header .top-header-right .login-form button:hover {
+  background-color: #ac2d48;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header nav {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  top: 50px;
+  left: 0px;
+}
+
+header nav .logo img {
+  width: 100%;
+}
+
+.home {
+  margin-top: -40px;
+}
+
+.home .home-banner {
+  position: relative;
+}
+
+.home .home-banner img {
+  width: 100%;
+}
+
+.home .home-banner a {
+  position: absolute;
+  padding: 8px 30px;
+  background-color: #ac2d48;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.home .home-banner .home-banner1-button {
+  top: 66%;
+  left: 52%;
+}
+
+.home .home-banner .home-banner2-button {
+  top: 66%;
+  left: 5%;
+}
+
+.services,
+.new-arrival-products,
+.exclusive-combo {
+  margin: 50px 0px;
+}
+
+.services .services-heading,
+.services .new-arrival-heading,
+.services .combo-heading,
+.new-arrival-products .services-heading,
+.new-arrival-products .new-arrival-heading,
+.new-arrival-products .combo-heading,
+.exclusive-combo .services-heading,
+.exclusive-combo .new-arrival-heading,
+.exclusive-combo .combo-heading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services .services-heading h2,
+.services .new-arrival-heading h2,
+.services .combo-heading h2,
+.new-arrival-products .services-heading h2,
+.new-arrival-products .new-arrival-heading h2,
+.new-arrival-products .combo-heading h2,
+.exclusive-combo .services-heading h2,
+.exclusive-combo .new-arrival-heading h2,
+.exclusive-combo .combo-heading h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-family: "Quicksand", sans-serif;
+  z-index: 9;
+  background-color: #fff;
+  padding: 0px 10px;
+}
+
+.services .dotted-line,
+.new-arrival-products .dotted-line,
+.exclusive-combo .dotted-line {
+  position: relative;
+}
+
+.services .dotted-line::after,
+.new-arrival-products .dotted-line::after,
+.exclusive-combo .dotted-line::after {
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: -40px;
+  content: "";
+  width: 100%;
+  border-bottom: 3px dashed #ac2d48;
+}
+
+.services .services-details .service-card,
+.services .services-details .new-arrival-card,
+.services .services-details .combo-card,
+.services .new-arrival-products-details .service-card,
+.services .new-arrival-products-details .new-arrival-card,
+.services .new-arrival-products-details .combo-card,
+.services .combo-products-details .service-card,
+.services .combo-products-details .new-arrival-card,
+.services .combo-products-details .combo-card,
+.new-arrival-products .services-details .service-card,
+.new-arrival-products .services-details .new-arrival-card,
+.new-arrival-products .services-details .combo-card,
+.new-arrival-products .new-arrival-products-details .service-card,
+.new-arrival-products .new-arrival-products-details .new-arrival-card,
+.new-arrival-products .new-arrival-products-details .combo-card,
+.new-arrival-products .combo-products-details .service-card,
+.new-arrival-products .combo-products-details .new-arrival-card,
+.new-arrival-products .combo-products-details .combo-card,
+.exclusive-combo .services-details .service-card,
+.exclusive-combo .services-details .new-arrival-card,
+.exclusive-combo .services-details .combo-card,
+.exclusive-combo .new-arrival-products-details .service-card,
+.exclusive-combo .new-arrival-products-details .new-arrival-card,
+.exclusive-combo .new-arrival-products-details .combo-card,
+.exclusive-combo .combo-products-details .service-card,
+.exclusive-combo .combo-products-details .new-arrival-card,
+.exclusive-combo .combo-products-details .combo-card {
+  text-align: center;
+}
+
+.services .services-details .service-card .service-card-img-wrapper img,
+.services .services-details .service-card .new-arrival-img-wrapper img,
+.services .services-details .service-card .combo-img-wrapper img,
+.services .services-details .new-arrival-card .service-card-img-wrapper img,
+.services .services-details .new-arrival-card .new-arrival-img-wrapper img,
+.services .services-details .new-arrival-card .combo-img-wrapper img,
+.services .services-details .combo-card .service-card-img-wrapper img,
+.services .services-details .combo-card .new-arrival-img-wrapper img,
+.services .services-details .combo-card .combo-img-wrapper img,
+.services .new-arrival-products-details .service-card .service-card-img-wrapper img,
+.services .new-arrival-products-details .service-card .new-arrival-img-wrapper img,
+.services .new-arrival-products-details .service-card .combo-img-wrapper img,
+.services .new-arrival-products-details .new-arrival-card .service-card-img-wrapper img,
+.services .new-arrival-products-details .new-arrival-card .new-arrival-img-wrapper img,
+.services .new-arrival-products-details .new-arrival-card .combo-img-wrapper img,
+.services .new-arrival-products-details .combo-card .service-card-img-wrapper img,
+.services .new-arrival-products-details .combo-card .new-arrival-img-wrapper img,
+.services .new-arrival-products-details .combo-card .combo-img-wrapper img,
+.services .combo-products-details .service-card .service-card-img-wrapper img,
+.services .combo-products-details .service-card .new-arrival-img-wrapper img,
+.services .combo-products-details .service-card .combo-img-wrapper img,
+.services .combo-products-details .new-arrival-card .service-card-img-wrapper img,
+.services .combo-products-details .new-arrival-card .new-arrival-img-wrapper img,
+.services .combo-products-details .new-arrival-card .combo-img-wrapper img,
+.services .combo-products-details .combo-card .service-card-img-wrapper img,
+.services .combo-products-details .combo-card .new-arrival-img-wrapper img,
+.services .combo-products-details .combo-card .combo-img-wrapper img,
+.new-arrival-products .services-details .service-card .service-card-img-wrapper img,
+.new-arrival-products .services-details .service-card .new-arrival-img-wrapper img,
+.new-arrival-products .services-details .service-card .combo-img-wrapper img,
+.new-arrival-products .services-details .new-arrival-card .service-card-img-wrapper img,
+.new-arrival-products .services-details .new-arrival-card .new-arrival-img-wrapper img,
+.new-arrival-products .services-details .new-arrival-card .combo-img-wrapper img,
+.new-arrival-products .services-details .combo-card .service-card-img-wrapper img,
+.new-arrival-products .services-details .combo-card .new-arrival-img-wrapper img,
+.new-arrival-products .services-details .combo-card .combo-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .service-card .service-card-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .service-card .new-arrival-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .service-card .combo-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .new-arrival-card .service-card-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .new-arrival-card .new-arrival-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .new-arrival-card .combo-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .combo-card .service-card-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .combo-card .new-arrival-img-wrapper img,
+.new-arrival-products .new-arrival-products-details .combo-card .combo-img-wrapper img,
+.new-arrival-products .combo-products-details .service-card .service-card-img-wrapper img,
+.new-arrival-products .combo-products-details .service-card .new-arrival-img-wrapper img,
+.new-arrival-products .combo-products-details .service-card .combo-img-wrapper img,
+.new-arrival-products .combo-products-details .new-arrival-card .service-card-img-wrapper img,
+.new-arrival-products .combo-products-details .new-arrival-card .new-arrival-img-wrapper img,
+.new-arrival-products .combo-products-details .new-arrival-card .combo-img-wrapper img,
+.new-arrival-products .combo-products-details .combo-card .service-card-img-wrapper img,
+.new-arrival-products .combo-products-details .combo-card .new-arrival-img-wrapper img,
+.new-arrival-products .combo-products-details .combo-card .combo-img-wrapper img,
+.exclusive-combo .services-details .service-card .service-card-img-wrapper img,
+.exclusive-combo .services-details .service-card .new-arrival-img-wrapper img,
+.exclusive-combo .services-details .service-card .combo-img-wrapper img,
+.exclusive-combo .services-details .new-arrival-card .service-card-img-wrapper img,
+.exclusive-combo .services-details .new-arrival-card .new-arrival-img-wrapper img,
+.exclusive-combo .services-details .new-arrival-card .combo-img-wrapper img,
+.exclusive-combo .services-details .combo-card .service-card-img-wrapper img,
+.exclusive-combo .services-details .combo-card .new-arrival-img-wrapper img,
+.exclusive-combo .services-details .combo-card .combo-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .service-card .service-card-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .service-card .new-arrival-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .service-card .combo-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .new-arrival-card .service-card-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .new-arrival-card .new-arrival-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .new-arrival-card .combo-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .combo-card .service-card-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .combo-card .new-arrival-img-wrapper img,
+.exclusive-combo .new-arrival-products-details .combo-card .combo-img-wrapper img,
+.exclusive-combo .combo-products-details .service-card .service-card-img-wrapper img,
+.exclusive-combo .combo-products-details .service-card .new-arrival-img-wrapper img,
+.exclusive-combo .combo-products-details .service-card .combo-img-wrapper img,
+.exclusive-combo .combo-products-details .new-arrival-card .service-card-img-wrapper img,
+.exclusive-combo .combo-products-details .new-arrival-card .new-arrival-img-wrapper img,
+.exclusive-combo .combo-products-details .new-arrival-card .combo-img-wrapper img,
+.exclusive-combo .combo-products-details .combo-card .service-card-img-wrapper img,
+.exclusive-combo .combo-products-details .combo-card .new-arrival-img-wrapper img,
+.exclusive-combo .combo-products-details .combo-card .combo-img-wrapper img {
+  width: 100%;
+}
+
+.services .services-details .service-card h3,
+.services .services-details .new-arrival-card h3,
+.services .services-details .combo-card h3,
+.services .new-arrival-products-details .service-card h3,
+.services .new-arrival-products-details .new-arrival-card h3,
+.services .new-arrival-products-details .combo-card h3,
+.services .combo-products-details .service-card h3,
+.services .combo-products-details .new-arrival-card h3,
+.services .combo-products-details .combo-card h3,
+.new-arrival-products .services-details .service-card h3,
+.new-arrival-products .services-details .new-arrival-card h3,
+.new-arrival-products .services-details .combo-card h3,
+.new-arrival-products .new-arrival-products-details .service-card h3,
+.new-arrival-products .new-arrival-products-details .new-arrival-card h3,
+.new-arrival-products .new-arrival-products-details .combo-card h3,
+.new-arrival-products .combo-products-details .service-card h3,
+.new-arrival-products .combo-products-details .new-arrival-card h3,
+.new-arrival-products .combo-products-details .combo-card h3,
+.exclusive-combo .services-details .service-card h3,
+.exclusive-combo .services-details .new-arrival-card h3,
+.exclusive-combo .services-details .combo-card h3,
+.exclusive-combo .new-arrival-products-details .service-card h3,
+.exclusive-combo .new-arrival-products-details .new-arrival-card h3,
+.exclusive-combo .new-arrival-products-details .combo-card h3,
+.exclusive-combo .combo-products-details .service-card h3,
+.exclusive-combo .combo-products-details .new-arrival-card h3,
+.exclusive-combo .combo-products-details .combo-card h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.services .services-details .service-card p,
+.services .services-details .new-arrival-card p,
+.services .services-details .combo-card p,
+.services .new-arrival-products-details .service-card p,
+.services .new-arrival-products-details .new-arrival-card p,
+.services .new-arrival-products-details .combo-card p,
+.services .combo-products-details .service-card p,
+.services .combo-products-details .new-arrival-card p,
+.services .combo-products-details .combo-card p,
+.new-arrival-products .services-details .service-card p,
+.new-arrival-products .services-details .new-arrival-card p,
+.new-arrival-products .services-details .combo-card p,
+.new-arrival-products .new-arrival-products-details .service-card p,
+.new-arrival-products .new-arrival-products-details .new-arrival-card p,
+.new-arrival-products .new-arrival-products-details .combo-card p,
+.new-arrival-products .combo-products-details .service-card p,
+.new-arrival-products .combo-products-details .new-arrival-card p,
+.new-arrival-products .combo-products-details .combo-card p,
+.exclusive-combo .services-details .service-card p,
+.exclusive-combo .services-details .new-arrival-card p,
+.exclusive-combo .services-details .combo-card p,
+.exclusive-combo .new-arrival-products-details .service-card p,
+.exclusive-combo .new-arrival-products-details .new-arrival-card p,
+.exclusive-combo .new-arrival-products-details .combo-card p,
+.exclusive-combo .combo-products-details .service-card p,
+.exclusive-combo .combo-products-details .new-arrival-card p,
+.exclusive-combo .combo-products-details .combo-card p {
+  margin-top: 20px;
+  font-size: 14px;
+  overflow: hidden;
+  margin-bottom: -5px;
+}
+
+.services .services-details .service-card p i,
+.services .services-details .new-arrival-card p i,
+.services .services-details .combo-card p i,
+.services .new-arrival-products-details .service-card p i,
+.services .new-arrival-products-details .new-arrival-card p i,
+.services .new-arrival-products-details .combo-card p i,
+.services .combo-products-details .service-card p i,
+.services .combo-products-details .new-arrival-card p i,
+.services .combo-products-details .combo-card p i,
+.new-arrival-products .services-details .service-card p i,
+.new-arrival-products .services-details .new-arrival-card p i,
+.new-arrival-products .services-details .combo-card p i,
+.new-arrival-products .new-arrival-products-details .service-card p i,
+.new-arrival-products .new-arrival-products-details .new-arrival-card p i,
+.new-arrival-products .new-arrival-products-details .combo-card p i,
+.new-arrival-products .combo-products-details .service-card p i,
+.new-arrival-products .combo-products-details .new-arrival-card p i,
+.new-arrival-products .combo-products-details .combo-card p i,
+.exclusive-combo .services-details .service-card p i,
+.exclusive-combo .services-details .new-arrival-card p i,
+.exclusive-combo .services-details .combo-card p i,
+.exclusive-combo .new-arrival-products-details .service-card p i,
+.exclusive-combo .new-arrival-products-details .new-arrival-card p i,
+.exclusive-combo .new-arrival-products-details .combo-card p i,
+.exclusive-combo .combo-products-details .service-card p i,
+.exclusive-combo .combo-products-details .new-arrival-card p i,
+.exclusive-combo .combo-products-details .combo-card p i {
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.services .services-details .service-card .buttons,
+.services .services-details .new-arrival-card .buttons,
+.services .services-details .combo-card .buttons,
+.services .new-arrival-products-details .service-card .buttons,
+.services .new-arrival-products-details .new-arrival-card .buttons,
+.services .new-arrival-products-details .combo-card .buttons,
+.services .combo-products-details .service-card .buttons,
+.services .combo-products-details .new-arrival-card .buttons,
+.services .combo-products-details .combo-card .buttons,
+.new-arrival-products .services-details .service-card .buttons,
+.new-arrival-products .services-details .new-arrival-card .buttons,
+.new-arrival-products .services-details .combo-card .buttons,
+.new-arrival-products .new-arrival-products-details .service-card .buttons,
+.new-arrival-products .new-arrival-products-details .new-arrival-card .buttons,
+.new-arrival-products .new-arrival-products-details .combo-card .buttons,
+.new-arrival-products .combo-products-details .service-card .buttons,
+.new-arrival-products .combo-products-details .new-arrival-card .buttons,
+.new-arrival-products .combo-products-details .combo-card .buttons,
+.exclusive-combo .services-details .service-card .buttons,
+.exclusive-combo .services-details .new-arrival-card .buttons,
+.exclusive-combo .services-details .combo-card .buttons,
+.exclusive-combo .new-arrival-products-details .service-card .buttons,
+.exclusive-combo .new-arrival-products-details .new-arrival-card .buttons,
+.exclusive-combo .new-arrival-products-details .combo-card .buttons,
+.exclusive-combo .combo-products-details .service-card .buttons,
+.exclusive-combo .combo-products-details .new-arrival-card .buttons,
+.exclusive-combo .combo-products-details .combo-card .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.services .services-details .service-card .buttons span,
+.services .services-details .new-arrival-card .buttons span,
+.services .services-details .combo-card .buttons span,
+.services .new-arrival-products-details .service-card .buttons span,
+.services .new-arrival-products-details .new-arrival-card .buttons span,
+.services .new-arrival-products-details .combo-card .buttons span,
+.services .combo-products-details .service-card .buttons span,
+.services .combo-products-details .new-arrival-card .buttons span,
+.services .combo-products-details .combo-card .buttons span,
+.new-arrival-products .services-details .service-card .buttons span,
+.new-arrival-products .services-details .new-arrival-card .buttons span,
+.new-arrival-products .services-details .combo-card .buttons span,
+.new-arrival-products .new-arrival-products-details .service-card .buttons span,
+.new-arrival-products .new-arrival-products-details .new-arrival-card .buttons span,
+.new-arrival-products .new-arrival-products-details .combo-card .buttons span,
+.new-arrival-products .combo-products-details .service-card .buttons span,
+.new-arrival-products .combo-products-details .new-arrival-card .buttons span,
+.new-arrival-products .combo-products-details .combo-card .buttons span,
+.exclusive-combo .services-details .service-card .buttons span,
+.exclusive-combo .services-details .new-arrival-card .buttons span,
+.exclusive-combo .services-details .combo-card .buttons span,
+.exclusive-combo .new-arrival-products-details .service-card .buttons span,
+.exclusive-combo .new-arrival-products-details .new-arrival-card .buttons span,
+.exclusive-combo .new-arrival-products-details .combo-card .buttons span,
+.exclusive-combo .combo-products-details .service-card .buttons span,
+.exclusive-combo .combo-products-details .new-arrival-card .buttons span,
+.exclusive-combo .combo-products-details .combo-card .buttons span {
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: transparent;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.services .services-details .service-card .buttons span:hover,
+.services .services-details .new-arrival-card .buttons span:hover,
+.services .services-details .combo-card .buttons span:hover,
+.services .new-arrival-products-details .service-card .buttons span:hover,
+.services .new-arrival-products-details .new-arrival-card .buttons span:hover,
+.services .new-arrival-products-details .combo-card .buttons span:hover,
+.services .combo-products-details .service-card .buttons span:hover,
+.services .combo-products-details .new-arrival-card .buttons span:hover,
+.services .combo-products-details .combo-card .buttons span:hover,
+.new-arrival-products .services-details .service-card .buttons span:hover,
+.new-arrival-products .services-details .new-arrival-card .buttons span:hover,
+.new-arrival-products .services-details .combo-card .buttons span:hover,
+.new-arrival-products .new-arrival-products-details .service-card .buttons span:hover,
+.new-arrival-products .new-arrival-products-details .new-arrival-card .buttons span:hover,
+.new-arrival-products .new-arrival-products-details .combo-card .buttons span:hover,
+.new-arrival-products .combo-products-details .service-card .buttons span:hover,
+.new-arrival-products .combo-products-details .new-arrival-card .buttons span:hover,
+.new-arrival-products .combo-products-details .combo-card .buttons span:hover,
+.exclusive-combo .services-details .service-card .buttons span:hover,
+.exclusive-combo .services-details .new-arrival-card .buttons span:hover,
+.exclusive-combo .services-details .combo-card .buttons span:hover,
+.exclusive-combo .new-arrival-products-details .service-card .buttons span:hover,
+.exclusive-combo .new-arrival-products-details .new-arrival-card .buttons span:hover,
+.exclusive-combo .new-arrival-products-details .combo-card .buttons span:hover,
+.exclusive-combo .combo-products-details .service-card .buttons span:hover,
+.exclusive-combo .combo-products-details .new-arrival-card .buttons span:hover,
+.exclusive-combo .combo-products-details .combo-card .buttons span:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #e5204f;
+  border: 2px solid #e5204f;
+}
+
+.services .dicount-banner,
+.new-arrival-products .dicount-banner,
+.exclusive-combo .dicount-banner {
+  position: relative;
+  margin-top: 50px;
+}
+
+.services .dicount-banner img,
+.new-arrival-products .dicount-banner img,
+.exclusive-combo .dicount-banner img {
+  width: 100%;
+}
+
+.services .dicount-banner a,
+.new-arrival-products .dicount-banner a,
+.exclusive-combo .dicount-banner a {
+  position: absolute;
+  bottom: 21%;
+  right: 10%;
+  padding: 10px 45px;
+  font-weight: 600;
+  background-color: #e5204f;
+  font-size: 16px;
+  color: #fff;
+}
+
+.services .dicount-banner2,
+.new-arrival-products .dicount-banner2,
+.exclusive-combo .dicount-banner2 {
+  position: relative;
+  margin-top: 50px;
+}
+
+.services .dicount-banner2 img,
+.new-arrival-products .dicount-banner2 img,
+.exclusive-combo .dicount-banner2 img {
+  width: 100%;
+}
+
+.services .dicount-banner2 a,
+.new-arrival-products .dicount-banner2 a,
+.exclusive-combo .dicount-banner2 a {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  padding: 10px 45px;
+  font-weight: 600;
+  background-color: #e5204f;
+  font-size: 16px;
+  color: #fff;
+}
+
+footer {
+  background-color: #232323;
+  padding-top: 20px;
+  color: #fff;
+}
+
+footer .footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+footer .footer-heading::before {
+  position: absolute;
+  left: 8%;
+  top: 130%;
+  -webkit-transform: translate(-40%);
+          transform: translate(-40%);
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-bottom: 2px dashed #ac2d48;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+}
+
+footer .footer-contact-info ul li {
+  margin-bottom: 20px;
+}
+
+footer .footer-contact-info .footer-social-icons a i {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 12px;
+  background-color: #dd0285;
+  border-radius: 50%;
+}
+
+footer .footer-contact-info .footer-social-icons a:first-child i {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 14px;
+  background-color: #dd0285;
+  border-radius: 50%;
+}
+
+footer .end-footer {
+  padding: 5px;
+  text-align: right;
+}
+
+footer .end-footer span {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+footer .end-footer input {
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  width: 300px;
+  border: none;
+}
+
+footer .end-footer a {
+  margin-left: -5px;
+  padding: 8px 30px 10px 30px;
+  background-color: #dd0285;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+footer > :first-child {
+  border-bottom: 2px solid #4a4a4a;
+}
+/*# sourceMappingURL=index.css.map */
